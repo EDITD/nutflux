@@ -1,0 +1,21 @@
+{
+  "browser": true, //browser constants, such as alert
+  "curly": false, // don't {} on one-line if
+  "newcap": true, // constructors must start with capital letter
+  "nomen": false, // permit leading/trailing underscores, these do actually mean private in jQuery plugins
+  "nonew": true, // don't permit object creation for side-effects only
+  "strict": true, // don't require "use strict";
+  "sub": true, // don't force foo['bar'] to be rewritten as foo.bar
+  "unused": true, // warn on variables that are declared but never used
+  "regexp": true, // warn on unsafe . in regexps
+  "laxcomma": true, // don't complain about comma's before var names in var block
+  "eqnull": true, // Allow == null comparisons to catch undefined and nulls
+  "forin": true, // Enforce isOwnProperty check in for in loops
+  "immed": true, // Enforce immediately invoked function calls to be wrapped in ()
+  "undef": true, // Don't allow the use of undefined variables
+  "loopfunc": true,
+  "quotmark": "double",
+  "indent": 4,
+  "node": true,
+  "esnext": true
+}

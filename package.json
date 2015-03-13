@@ -1,0 +1,26 @@
+{
+  "name": "nutflux",
+  "version": "1.0.0",
+  "description": "Simple idiomatic flux functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EDITD/nutflux.git"
+  },
+  "keywords": [
+    "flux"
+  ],
+  "author": "EDITD devs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EDITD/nutflux/issues"
+  },
+  "homepage": "https://github.com/EDITD/nutflux",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "flux-constant": "^1.0.4"
+  }
+}
