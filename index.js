@@ -1,7 +1,7 @@
 var AppDispatcher = require("./src/AppDispatcher")
   , BaseStore = require("./src/stores/BaseStore")
   , createStore = require("./src/stores/createStore")
-  , createConstants = require("./src/createConstants")
+  , createConstants = require("./src/constants/createConstants")
   , createStoreListenMixin = require("./src/mixins/createStoreListenMixin");
 
 var Nutflux = {
