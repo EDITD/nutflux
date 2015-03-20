@@ -4,7 +4,7 @@ Simple idiomatic flux helpers based on Facebook's Dispatcher.
 # Installation
 
 ```js
-npm install --save git+ssh://git@github.com:EDITD/nutflux.git#v1.0.0
+npm install nutflux --save
 ```
 
 # Usage
