@@ -9,6 +9,10 @@ class BaseStore extends EventEmitter {
 
     initialize() {}
 
+    getState() {
+        return this.state;
+    }
+
     addChangeListener(callback) {
         this.on(CHANGE_EVENT, callback);
     }
