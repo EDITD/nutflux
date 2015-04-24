@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/EDITD/nutflux",
   "dependencies": {
-    "flux": "^2.0.1",
-    "flux-constant": "^1.0.4"
+    "flux": "^2.0.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

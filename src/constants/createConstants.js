@@ -1,9 +1,28 @@
 "use strict";
 
-var FluxConstant = require("flux-constant");
+var nutfluxUniqueId = 0;
+
+class NutfluxConstant {
+
+    constructor(name) {
+        nutfluxUniqueId++;
+        this.id = nutfluxUniqueId;
+        this.name = name;
+    }
+
+    toString() {
+        return this.id + "_" + this.name;
+    }
+}
 
 function createConstants(...constants) {
-    return FluxConstant.set(constants);
+    var nutfluxConstants = {};
+
+    constants.forEach((constant) => {
+        nutfluxConstants[constant] = new NutfluxConstant(constant);
+    });
+
+    return nutfluxConstants;
 }
 
 module.exports = createConstants;
