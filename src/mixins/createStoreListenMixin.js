@@ -6,7 +6,7 @@ function createStoreListenMixin(...stores) {
             return this.getStateFromStores();
         },
 
-        componentDidMount() {
+        componentWillMount() {
             stores.forEach(store =>
                 store.addChangeListener(this._onChange)
             );
