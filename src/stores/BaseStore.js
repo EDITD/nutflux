@@ -13,6 +13,14 @@ class BaseStore extends EventEmitter {
         return this.state;
     }
 
+    resetState() {
+        // Used for setting up initial state in stores during tests
+        // Assumes there is a _resetState defined, and that the state is
+        // an Immutable object.
+        this._resetState();
+        this.state = this.state.merge(params);
+    }
+
     addChangeListener(callback) {
         this.on(CHANGE_EVENT, callback);
     }
