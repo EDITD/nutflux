@@ -45,15 +45,15 @@ var TestContainer = React.createClass({
 
     componentDidMount() {
         baseStore.addChangeListener(this._onChange);
-    }
+    },
 
     componentWillUnmount() {
         baseStore.removeChangeListener(this._onChange);
-    }
+    },
 
     _onChange: function() {
         console.log("CHANGED!");
-    }
+    },
 
 });
 
