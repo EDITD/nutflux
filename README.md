@@ -120,3 +120,5 @@ var HelloWorldContainer = React.createClass({
 
 module.exports = HelloWorldContainer;
 ```
+
+* `createPureClass(obj)` simplifies using PureRenderMixin - it adds PureRenderMixin `obj.mixins` and passes obj to `React.createClass()`
