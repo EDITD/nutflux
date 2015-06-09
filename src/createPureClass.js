@@ -1,7 +1,7 @@
 "use strict";
 
 const React = require("react/addons");
-const { PureRenderMixin } = React;
+const { PureRenderMixin } = React.addons;
 
 function createPureClass(obj) {
     const mixins = [PureRenderMixin];
